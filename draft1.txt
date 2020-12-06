@@ -1,0 +1,42 @@
+window.onload = ()=>{
+    init();
+    window.addEventListener('resize',init,false);
+}
+
+function init(){
+    var canvas = document.querySelector('canvas');
+    var ctx = canvas.getContext('2d');
+    var myheight = window.innerHeight - 5;
+    var mywidth = window.innerWidth - 5;
+    var bgColor = '#87ceeb';
+
+    ctx.canvas.width = mywidth;
+    ctx.canvas.height = myheight;
+
+    ctx.fillStyle = bgColor;
+    ctx.fillRect(0,0,mywidth,myheight);
+
+    var start = new Image(),
+    startWidth = innerWidth/4,
+    startHeight = innerWidth/6,
+    startX = (innerWidth/2) - (startWidth/2),
+    startY = (innerHeight/2) - (startHeight/2);
+
+
+    start.src = './res/start.png';
+
+    start.onload = ()=>{
+        ctx.drawImage(start,startX,startY,startWidth,startHeight);
+        addEventListener('click',(e)=>{
+            var cx = e.pageX,
+            cy = e.pageY;
+
+            if((innerWidth/2)-startWidth/2 < cx && 
+            (innerWidth/2)+startWidth/2 > cx &&
+            (innerHeight/2)-startHeight/2 < cy && 
+            (innerHeight/2)+startHeight/2 > cy){
+            }
+            
+        },false);
+    }
+}

@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+html, body{
+    background-color: rgb(245, 209, 205);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 100%;
+    width:100%;
+}
+.container{
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    height: 75%;
+    width: 75%;
+    background-color: rgb(245, 209, 205);
+    border-radius: 25px;
+
+    box-shadow: -2px -2px 15px 3px rgba(255, 255, 255, 0.63),
+                2px 2px 15px 3px rgba(34, 34, 34, 0.199);
+
+    font-family: 'Varela Round',sans-serif;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#text-container{
+    color: rgb(131, 54, 67);
+    margin: auto;
+    width:100%;
+    font-weight: 900;
+    font-size: 1rem;
+    text-align: center;
+    padding: 2rem
+}

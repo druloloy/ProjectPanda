@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panda</title>
+
+
+    <link rel="stylesheet" href="css/main.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   </head>
+<body>
+    
+
+<div id="scratch">
+    <p>"Life is nothing without air."</p>
+</div>
+
+
+
+    <script src="js/wScratchPad.min.js"></script>
+    <script type="text/javascript">
+        $('#scratch').wScratchPad({
+                size        : 50,          // The size of the brush/scratch.
+                bg          : '#555',  // Background (image path or hex color).
+                fg          : '#000', // Foreground (image path or hex color).
+                cursor      :  'pointer'
+        });
+    
+    </script>
+</body>
+</html>

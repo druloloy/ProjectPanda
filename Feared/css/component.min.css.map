@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACKA,AAAA,CAAC,CAAA;EACG,MAAM,EAAC,CAAC;EACR,OAAO,EAAC,CAAC;EACT,UAAU,EAAE,UAAU;CACzB;;ADPD,AAAA,IAAI,CAAA;EACA,MAAM,EAAC,KAAK;EACZ,KAAK,EAAC,IAAI;EACV,gBAAgB,ECJF,IAAI;EDKlB,KAAK,ECJW,IAAI;CDKvB",
+    "sources": [
+        "../sass/component.scss",
+        "../sass/_config.scss"
+    ],
+    "names": [],
+    "file": "component.min.css"
+}

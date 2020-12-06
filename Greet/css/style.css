@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@font-face{
+    font-family: Fancy;
+    src: url("../res/font/Hanged\ Letters.ttf");
+}
+@font-face{
+    font-family: Avocado;
+    src: url('../res/font/Avocado\ Creamy.ttf');
+}
+@font-face{
+    font-family: Unicorn;
+    src: url('../res/font/Sweet\ Unicorn.ttf');
+}
+:root{
+    --main-light: #fbde44;
+    --main-dark: #87ceeb;
+    --main-red: #660000;
+    --main-darkBlue: #000030;
+}
+
+
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    height:100vh;
+    width:100vw;
+    background-color: var(--main-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+}
+.panda-container{
+    height: 75%;
+    width: 300px;
+    position: absolute;
+}
+
+.panda-start{
+    position: relative;
+    min-height:100%;
+    min-width:100%;
+    background-color: var(--main-dark);
+    border-radius: 10px;
+    box-shadow: -3px -3px 5px rgba(240, 240, 240,.8),
+                5px 3px 7px rgba(20,20,20,.5);  
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    z-index:1;
+}
+#panda{
+    font-family: 'Fancy', sans-serif;
+    font-size: 60px;
+    font-weight: 800;
+    letter-spacing: 10px;
+    text-align: center;  
+    color: var(--main-darkBlue);
+    
+}
+.panda-image{
+    height: 250px;
+    width:250px;
+    border-radius: 80%;
+    object-fit: cover;
+}
+.panda-image img{
+    height:100%;
+    width:100%;
+}
+
+
+.message-card-container{
+    position: absolute;
+    height: 75%;
+    width:300px;
+    opacity:0;
+}
+.card{
+    position: absolute;
+    height:100%;
+    width:300px;
+    background-color:var(--main-light);
+    border-radius: 10px;
+    box-shadow: -3px -3px 3px rgba(80, 80, 80,.5),
+                5px 3px 7px rgba(20,20,20,.5);   
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    z-index:1;
+}
+.card-message{
+    max-height: 90%;
+    max-width:90%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--main-red);
+}
